@@ -14,6 +14,12 @@
 		A37F13632297F9F100820D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37F13612297F9F100820D9F /* LaunchScreen.storyboard */; };
 		A37F136E2297F9F100820D9F /* DownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F136D2297F9F100820D9F /* DownloadManagerTests.swift */; };
 		A37F13792297F9F100820D9F /* DownloadManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F13782297F9F100820D9F /* DownloadManagerUITests.swift */; };
+		A37F1387229803B700820D9F /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F1386229803B700820D9F /* DownloadView.swift */; };
+		A37F138A2298054100820D9F /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F13882298054100820D9F /* DownloadCell.swift */; };
+		A37F138B2298054100820D9F /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37F13892298054100820D9F /* DownloadCell.xib */; };
+		A37F138D2298082F00820D9F /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F138C2298082F00820D9F /* DownloadManager.swift */; };
+		A37F138F229808EF00820D9F /* DownloadObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F138E229808EF00820D9F /* DownloadObject.swift */; };
+		A37F1391229809F800820D9F /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F1390229809F800820D9F /* FileUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		A37F13742297F9F100820D9F /* DownloadManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37F13782297F9F100820D9F /* DownloadManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagerUITests.swift; sourceTree = "<group>"; };
 		A37F137A2297F9F100820D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37F1386229803B700820D9F /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		A37F13882298054100820D9F /* DownloadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
+		A37F13892298054100820D9F /* DownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
+		A37F138C2298082F00820D9F /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		A37F138E229808EF00820D9F /* DownloadObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadObject.swift; sourceTree = "<group>"; };
+		A37F1390229809F800820D9F /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				A37F135F2297F9F100820D9F /* Assets.xcassets */,
 				A37F13612297F9F100820D9F /* LaunchScreen.storyboard */,
 				A37F13642297F9F100820D9F /* Info.plist */,
+				A37F1386229803B700820D9F /* DownloadView.swift */,
+				A37F13882298054100820D9F /* DownloadCell.swift */,
+				A37F13892298054100820D9F /* DownloadCell.xib */,
+				A37F138C2298082F00820D9F /* DownloadManager.swift */,
+				A37F138E229808EF00820D9F /* DownloadObject.swift */,
+				A37F1390229809F800820D9F /* FileUtils.swift */,
 			);
 			path = DownloadManager;
 			sourceTree = "<group>";
@@ -230,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37F13632297F9F100820D9F /* LaunchScreen.storyboard in Resources */,
+				A37F138B2298054100820D9F /* DownloadCell.xib in Resources */,
 				A37F13602297F9F100820D9F /* Assets.xcassets in Resources */,
 				A37F135E2297F9EE00820D9F /* Main.storyboard in Resources */,
 			);
@@ -257,6 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37F135B2297F9EE00820D9F /* ViewController.swift in Sources */,
+				A37F138D2298082F00820D9F /* DownloadManager.swift in Sources */,
+				A37F138F229808EF00820D9F /* DownloadObject.swift in Sources */,
+				A37F138A2298054100820D9F /* DownloadCell.swift in Sources */,
+				A37F1387229803B700820D9F /* DownloadView.swift in Sources */,
+				A37F1391229809F800820D9F /* FileUtils.swift in Sources */,
 				A37F13592297F9EE00820D9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

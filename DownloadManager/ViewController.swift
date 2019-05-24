@@ -9,12 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var fileNameTxtFld: UITextField!
+    @IBOutlet weak var UrlTxtFld: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func downloadButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 

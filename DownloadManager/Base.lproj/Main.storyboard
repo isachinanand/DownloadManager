@@ -47,6 +47,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="downloadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRx-dn-Pe9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,10 +71,54 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="UrlTxtFld" destination="ABN-HW-OYC" id="hJd-R3-QIX"/>
+                        <outlet property="fileNameTxtFld" destination="Ys4-LY-1eZ" id="o1U-BS-Www"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Download View-->
+        <scene sceneID="Xow-sQ-iCl">
+            <objects>
+                <viewController storyboardIdentifier="DownloadView" id="6GO-Se-nZY" customClass="DownloadView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5Y-0o-wIb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lce-Oj-469">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="AUg-XR-6Vx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AUg-XR-6Vx" id="mBE-gQ-hy1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kRs-CP-m1d" firstAttribute="trailing" secondItem="lce-Oj-469" secondAttribute="trailing" id="2X6-EC-IPW"/>
+                            <constraint firstItem="lce-Oj-469" firstAttribute="leading" secondItem="kRs-CP-m1d" secondAttribute="leading" id="F6U-UO-6QP"/>
+                            <constraint firstItem="lce-Oj-469" firstAttribute="top" secondItem="kRs-CP-m1d" secondAttribute="top" id="k6k-yp-wXm"/>
+                            <constraint firstItem="kRs-CP-m1d" firstAttribute="bottom" secondItem="lce-Oj-469" secondAttribute="bottom" id="x2n-YU-T2E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kRs-CP-m1d"/>
+                    </view>
+                    <connections>
+                        <outlet property="downloadList" destination="lce-Oj-469" id="PGH-Sd-u0i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iga-fb-hcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="97"/>
         </scene>
     </scenes>
 </document>

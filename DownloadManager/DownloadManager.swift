@@ -146,9 +146,6 @@ final public class DownloadManager: NSObject {
 }
 
 extension DownloadManager : URLSessionDelegate, URLSessionDownloadDelegate {
-    
-    // MARK:- Delegates
-    
     public func urlSession(_ session: URLSession,
                            downloadTask: URLSessionDownloadTask,
                            didFinishDownloadingTo location: URL) {
